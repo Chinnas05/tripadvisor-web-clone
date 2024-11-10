@@ -1,0 +1,377 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0%;
+    flex-wrap: wrap;
+
+}
+
+.header__img1 {
+    width: 200px;
+    height: auto;
+}
+
+.header__img2 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 820px;
+}
+
+.header__1,
+.header__2 {
+    display: flex;
+    align-items: center;
+}
+
+
+.header__1 h3,
+.header__2 h3 {
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+.sing {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Where Section */
+.where {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.where h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Menu Section */
+.menu {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/* Input Section */
+.input {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.input button{
+    background-color: #005a42;
+    color: #ffffff;
+    border-radius: 80px;
+    position: relative;
+    right: 50px;
+    width: 60px;
+}
+
+.input input {
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid #333;
+    width: 48%;
+    font-size: 1rem;
+}
+
+/* Gateway Section */
+.gatway {
+    position: relative;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gatway__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.sale-img__offer {
+    position: absolute;
+    top: 20%;
+    left: 350px;
+    width: 400px;
+    transform: translateX(-50%);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+}
+
+.sale-img__offer button {
+    color: #f4f4f4;
+    background-color: plum;
+    border-radius: 20px;
+    border: solid plum 1px;
+    position: relative;
+    top: 30px;
+    left: -40px;
+    margin: 50px;
+    width: 80px;
+}
+
+.sale-img__offer h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.sale-img__offer h3 {
+    font-size: 1.2rem;
+}
+
+/* Restaurants Section */
+.restaurants {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.category {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.category h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
+/* Square container */
+.square-container {
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Flexbox container for the image and text */
+.content {
+    display: flex;
+    height: 100%;
+    background-color: rgb(235, 205, 235);
+}
+
+/* Left side with image */
+.left-side {
+    flex: 1;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side img {
+    width: 100%;
+    height: 90;
+    object-fit: cover;
+    padding: 20px;
+    padding-top: 20px;
+}
+
+/* Right side with text */
+.right-side {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sponsor-text {
+    font-size: 14px;
+    color: #6e6e6e;
+    margin-bottom: 10px;
+}
+
+.sponsor-text a {
+    color: #007b5f;
+    text-decoration: none;
+}
+
+.sponsor-text a:hover {
+    text-decoration: underline;
+}
+
+.right-side h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.right-side p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    padding: 10px 20px;
+    background-color: #007b5f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #005a42;
+    display: inline;
+}
+
+/* Footer Styles */
+.tripadvisor-footer {
+    background-color: #a3a3a3;
+    color: #000000;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+
+.footer-section {
+    width: 22%;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+
+.footer-bottom-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-bottom-links li {
+    margin: 0 15px;
+}
+
+.footer-bottom-links li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-bottom-links li a:hover {
+    text-decoration: underline;
+}
